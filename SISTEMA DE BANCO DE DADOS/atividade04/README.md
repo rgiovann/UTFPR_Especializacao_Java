@@ -1,7 +1,10 @@
 ````
 # 🚀 Projeto JPA Consultas - Spring Boot, JPA e Docker
 
-Este repositório contém um projeto desenvolvido em **Spring Boot** que utiliza **Spring Data JPA** para consultas em um banco de dados **MariaDB**, rodando como um **container Docker**. O projeto explora diferentes tipos de consultas utilizando **JPQL, NamedQuery e Native Query**, seguindo boas práticas de desenvolvimento.
+Este repositório contém um projeto desenvolvido em **Spring Boot** que utiliza **Spring Data JPA**
+para consultas em um banco de dados **MariaDB**, rodando como um **container Docker**.
+O projeto explora diferentes tipos de consultas utilizando **JPQL, NamedQuery e Native Query**,
+seguindo boas práticas de desenvolvimento.
 
 ## 🛠 Tecnologias Utilizadas
 
