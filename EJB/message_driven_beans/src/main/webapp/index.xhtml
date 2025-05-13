@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Mensagens JMS</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f8f9fa;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                max-width: 500px;
+                margin: 80px auto;
+                background-color: #ffffff;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            }
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            label {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                font-size: 1rem;
+                border: 1px solid #ced4da;
+                border-radius: 5px;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+                margin-right: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .btn-primary {
+                background-color: #007bff;
+                color: white;
+            }
+
+            .mt-20 {
+                margin-top: 20px;
+            }
+
+            .btn-secondary {
+                background-color: #6c757d;
+                color: white;
+            }
+
+            .btn-danger {
+                background-color: #dc3545;
+                color: white;
+            }
+
+            .messages {
+                margin-top: 20px;
+                padding: 10px;
+                background-color: #e9ecef;
+                border-radius: 5px;
+                font-size: 0.95rem;
+            }
+        </style>
+    </h:head>
+
+    <h:body>
+        <div class="container">
+            <h:form>
+                <div class="form-group">
+                    <label for="mensagem">Entre com a mensagem:</label>
+                    <h:inputText id="mensagem" value="#{jsfProdutor.mensagem}" />
+                </div>
+
+                <div class="form-group">
+                    <h:commandButton value="Enviar Assíncrono"
+                                     action="#{jsfProdutor.send}"
+                                     styleClass="btn btn-primary" />
+                    <h:commandButton value="Processar Direto (Síncrono)"
+                                     action="#{jsfProdutor.processarDireto}"
+                                     styleClass="btn btn-secondary" />
+                    <h:commandButton value="Limpar"
+                                     action="#{jsfProdutor.limpar}"
+                                     styleClass="btn btn-danger mt-20" />                    
+                </div>
+
+                <div class="messages">
+                    <h:messages globalOnly="true" showDetail="true" showSummary="true"/>
+                </div>
+            </h:form>
+        </div>
+    </h:body>
+</html>
