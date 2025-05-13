@@ -41,10 +41,12 @@ O objetivo principal deste projeto é demonstrar os dois modelos de processament
 
 ## 🧩 Estrutura do Projeto
 
+```
 src/
-├── br.ejb.EjbConsumidor # Message-Driven Bean - consumidor JMS
-├── br.jsf.JsfProdutor # Managed Bean JSF - envia mensagens
-├── resources/index.xhtml # Interface JSF com botões de envio
+├── br.ejb.EjbConsumidor        # Message-Driven Bean - consumidor JMS
+├── br.jsf.JsfProdutor          # Managed Bean JSF - envia mensagens
+└── resources/index.xhtml       # Interface JSF com botões de envio
+```
 
 ## 🔧 Como Funciona
 
