@@ -99,6 +99,3 @@ java local.redes.FormCliente
 * Campo **idade** deve conter apenas números inteiros ≥ 0
 * Mensagens de erro amigáveis via `JOptionPane`
 
----
-
-Se desejar, posso gerar uma versão `.md` formatada para uso em GitHub ou `.docx` para entrega. Deseja isso?

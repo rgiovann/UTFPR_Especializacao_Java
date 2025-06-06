@@ -1,6 +1,9 @@
-Urna Eletrônica com RMI e Java Swing
+# Urna Eletrônica com RMI e Java Swing
+
 Bem-vindo ao projeto Urna Eletrônica, uma aplicação distribuída desenvolvida como resposta à atividade da disciplina Java Redes da Especialização em Desenvolvimento Java da UTFPR (Universidade Tecnológica Federal do Paraná). Este projeto simula um sistema de votação eletrônica utilizando Java RMI (Remote Method Invocation) para comunicação cliente-servidor e Java Swing para uma interface gráfica amigável, permitindo registrar votos para candidatos, consolidá-los em um servidor central e exibir logs coloridos das operações realizadas.
-📋 Descrição do Projeto
+
+## 📋 Descrição do Projeto
+
 Este projeto foi concebido para atender aos requisitos da disciplina de Java Redes, demonstrando a aplicação de conceitos de sistemas distribuídos e interfaces gráficas. Ele implementa um sistema de votação eletrônica com as seguintes funcionalidades:
 
 Interface Gráfica (Swing): Interface intuitiva para selecionar candidatos, inserir a quantidade de votos e enviar os dados ao servidor.
@@ -16,7 +19,7 @@ SumarizadorDeVotosImpl: Implementa a lógica de consolidação de votos, armazen
 SumarizadorDeVotosServer: Inicializa o servidor RMI e publica o objeto remoto.
 UrnaJavaGUI: Interface gráfica para interação com o usuário e envio de votos.
 
-🚀 Funcionalidades
+## 🚀 Funcionalidades
 
 Seleção de Candidatos: Escolha um candidato a partir de uma lista pré-definida.
 Registro de Votos: Insira a quantidade de votos e envie para o servidor central.
@@ -24,7 +27,7 @@ Logs Dinâmicos: Visualize o histórico de operações com timestamps e cores (l
 Encerramento Seguro: Confirmação antes de fechar a aplicação.
 Resultados Consolidados: O servidor exibe os totais de votos a cada 5 segundos.
 
-🛠 Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas
 
 Java 8+: Linguagem principal do projeto.
 Java RMI: Para comunicação distribuída entre cliente e servidor.
@@ -45,14 +48,14 @@ src/
 
 Nota: O projeto assume que a classe Candidato existe com métodos como getNrCandidato(), getNomeCandidato(), getNrVotosParcial(), e setNrVotosParcial().
 
-📦 Como Executar
+## 📦 Como Executar
 Pré-requisitos
 
 JDK 8+ instalado.
 IDE (como IntelliJ ou Eclipse) ou linha de comando com javac e java.
 Conexão local para o servidor RMI (executado em localhost:1099).
 
-Passos para Execução
+## Passos para Execução
 
 Compile o projeto:
 javac src/local/redes/*.java
@@ -76,7 +79,7 @@ Clique em Encerrar Urna para fechar a aplicação com confirmação.
 
 Dica: Certifique-se de que o servidor está rodando antes de iniciar a urna.
 
-📝 Notas
+## 📝 Notas
 
 Este projeto foi desenvolvido como parte da disciplina Java Redes da Especialização em Desenvolvimento Java da UTFPR.
 O servidor atualiza os resultados a cada 5 segundos no console.
